@@ -99,7 +99,7 @@ function PressPage() {
           <section className="press-section">
             <h2>Seating Chart</h2>
             <div className="seating-chart-container">
-              <img src="public/seatingchart.png" alt="Press Seating Chart" className="seating-chart" />
+              <img src="/seatingchart.png" alt="Press Seating Chart" className="seating-chart" />
             </div>
           </section>
         </div>
@@ -123,7 +123,7 @@ function AdministrationPage() {
       id: 'cos',
       title: 'White House Chief of Staff',
       name: 'giodoglover1',
-      image: 'public/cos.png',
+      image: '/cos.png',
       description: 'The Chief of Staff oversees the operations of the White House and coordinates between the President and the various departments and agencies. This role serves as the senior advisor to the President and manages the White House staff.',
       expandedText: 'The Chief of Staff is responsible for managing the President\'s schedule, coordinating policy development, overseeing White House operations, and serving as a key liaison between the President and other branches of government. This position requires exceptional organizational skills and the ability to navigate complex political and administrative challenges.'
     },
@@ -131,7 +131,7 @@ function AdministrationPage() {
       id: 'dpcos',
       title: 'White House Principal Deputy Chief of Staff',
       name: 'OMGWidgeon',
-      image: 'public/dpcos.png',
+      image: '/dpcos.png',
       description: 'The Principal Deputy Chief of Staff assists the Chief of Staff in managing White House operations and serves as a key deputy in coordinating administrative and policy matters.',
       expandedText: 'This position supports the Chief of Staff in all aspects of White House management, including staff coordination, policy development, and administrative oversight. The Principal Deputy Chief of Staff ensures continuity of operations and assists in strategic planning and decision-making processes.'
     },
@@ -139,7 +139,7 @@ function AdministrationPage() {
       id: 'ps',
       title: 'White House Press Secretary',
       name: 're09533',
-      image: 'public/ps.png',
+      image: '/ps.png',
       description: 'The Press Secretary serves as the primary spokesperson for the White House and the President, communicating administration policies and positions to the media and the public.',
       expandedText: 'The Press Secretary conducts daily briefings with the press corps, prepares statements on behalf of the administration, and coordinates media relations. This role requires strong communication skills, the ability to handle difficult questions, and a deep understanding of administration policies and priorities.'
     },
@@ -147,7 +147,7 @@ function AdministrationPage() {
       id: 'dcosfo',
       title: 'White House Deputy Chief of Staff for Operations',
       name: 'ww2Apache',
-      image: 'public/dcosfo.png',
+      image: '/dcosfo.png',
       description: 'The Deputy Chief of Staff for Operations oversees the day-to-day operational functions of the White House, ensuring efficient coordination of administrative activities and supporting the Chief of Staff in managing White House operations.',
       expandedText: 'This position is responsible for managing operational logistics, coordinating between departments, overseeing administrative staff, and ensuring smooth execution of White House activities. The Deputy Chief of Staff for Operations works closely with the Chief of Staff to maintain operational excellence and efficiency.'
     },
@@ -155,7 +155,7 @@ function AdministrationPage() {
       id: 'dooo',
       title: 'Director of Oval Operations',
       name: 'hhhhhhhhyys',
-      image: 'public/dooo.png',
+      image: '/dooo.png',
       description: 'The Director of Oval Operations manages the operations and logistics of the Oval Office, coordinating schedules, managing office resources, and ensuring smooth daily operations of the President\'s primary workspace.',
       expandedText: 'This position oversees the Oval Office staff, coordinates with the President\'s schedule, manages office resources and supplies, and ensures that all operational aspects of the Oval Office run efficiently. The Director works closely with the Chief of Staff and other senior advisors to maintain seamless operations.'
     },
@@ -163,7 +163,7 @@ function AdministrationPage() {
       id: 'whc',
       title: 'White House Counsel',
       name: 'pandaking314',
-      image: 'public/whc.png',
+      image: '/whc.png',
       description: 'The White House Counsel serves as the chief legal advisor to the President and the White House staff, providing legal guidance on policy matters and ensuring compliance with legal requirements.',
       expandedText: 'The White House Counsel reviews legislation, provides legal opinions on executive actions, advises on constitutional matters, and ensures that all White House activities comply with federal law. This role requires extensive legal expertise and the ability to navigate complex legal and constitutional issues.'
     },
@@ -171,7 +171,7 @@ function AdministrationPage() {
       id: 'nsa',
       title: 'National Security Advisor',
       name: 'skuiiski',
-      image: 'public/nsa.png',
+      image: '/nsa.png',
       description: 'The National Security Advisor serves as the principal advisor to the President on matters of national security, foreign policy, and defense strategy.',
       expandedText: 'The National Security Advisor coordinates with the Department of Defense, State Department, and intelligence agencies to provide comprehensive security briefings and policy recommendations. This role requires extensive knowledge of international relations, defense strategy, and the ability to synthesize complex information from multiple sources to provide clear guidance to the President.'
     },
@@ -179,7 +179,7 @@ function AdministrationPage() {
       id: 'hsa',
       title: 'Homeland Security Advisor',
       name: '42510hunter',
-      image: 'public/hsa.png',
+      image: '/hsa.png',
       description: 'The Homeland Security Advisor provides strategic advice to the President on matters of homeland security, domestic threat assessment, and coordination of federal agencies responsible for protecting the nation.',
       expandedText: 'This position works closely with the Department of Homeland Security, FBI, and other federal agencies to assess threats, coordinate responses, and develop comprehensive security strategies. The Homeland Security Advisor ensures effective communication and coordination between agencies to protect the nation from domestic threats.'
     }
