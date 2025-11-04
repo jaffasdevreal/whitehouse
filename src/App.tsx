@@ -50,11 +50,11 @@ function HomePage() {
       </div>
       <div className="hero-right">
         <div className="portraits-container">
-          <img src="public/vicepresident.png" alt="Vice President" className="vp-image" />
-          <img src="public/president.png" alt="President Nikola Kalinic" className="president-image" />
+          <img src="/vicepresident.png" alt="Vice President" className="vp-image" />
+          <img src="/president.png" alt="President Nikola Kalinic" className="president-image" />
         </div>
-      </div>
-    </div>
+            </div>
+          </div>
   )
 }
 
@@ -129,11 +129,11 @@ function AdministrationPage() {
     },
     {
       id: 'dpcos',
-      title: 'White House Deputy Principal Chief of Staff',
+      title: 'White House Principal Deputy Chief of Staff',
       name: 'OMGWidgeon',
       image: 'public/dpcos.png',
-      description: 'The Deputy Principal Chief of Staff assists the Chief of Staff in managing White House operations and serves as a key deputy in coordinating administrative and policy matters.',
-      expandedText: 'This position supports the Chief of Staff in all aspects of White House management, including staff coordination, policy development, and administrative oversight. The Deputy Principal Chief of Staff ensures continuity of operations and assists in strategic planning and decision-making processes.'
+      description: 'The Principal Deputy Chief of Staff assists the Chief of Staff in managing White House operations and serves as a key deputy in coordinating administrative and policy matters.',
+      expandedText: 'This position supports the Chief of Staff in all aspects of White House management, including staff coordination, policy development, and administrative oversight. The Principal Deputy Chief of Staff ensures continuity of operations and assists in strategic planning and decision-making processes.'
     },
     {
       id: 'ps',
@@ -144,12 +144,44 @@ function AdministrationPage() {
       expandedText: 'The Press Secretary conducts daily briefings with the press corps, prepares statements on behalf of the administration, and coordinates media relations. This role requires strong communication skills, the ability to handle difficult questions, and a deep understanding of administration policies and priorities.'
     },
     {
-      id: 'dps',
-      title: 'White House Deputy Press Secretary',
+      id: 'dcosfo',
+      title: 'White House Deputy Chief of Staff for Operations',
       name: 'ww2Apache',
-      image: 'public/dps.png',
-      description: 'The Deputy Press Secretary supports the Press Secretary in media relations and communications, helping to coordinate press briefings and manage media inquiries.',
-      expandedText: 'This position assists in all aspects of White House communications, including preparing briefing materials, coordinating with media outlets, and supporting the Press Secretary in daily operations. The Deputy Press Secretary ensures comprehensive coverage of administration activities and maintains strong relationships with the press corps.'
+      image: 'public/dcosfo.png',
+      description: 'The Deputy Chief of Staff for Operations oversees the day-to-day operational functions of the White House, ensuring efficient coordination of administrative activities and supporting the Chief of Staff in managing White House operations.',
+      expandedText: 'This position is responsible for managing operational logistics, coordinating between departments, overseeing administrative staff, and ensuring smooth execution of White House activities. The Deputy Chief of Staff for Operations works closely with the Chief of Staff to maintain operational excellence and efficiency.'
+    },
+    {
+      id: 'dooo',
+      title: 'Director of Oval Operations',
+      name: 'hhhhhhhhyys',
+      image: 'public/dooo.png',
+      description: 'The Director of Oval Operations manages the operations and logistics of the Oval Office, coordinating schedules, managing office resources, and ensuring smooth daily operations of the President\'s primary workspace.',
+      expandedText: 'This position oversees the Oval Office staff, coordinates with the President\'s schedule, manages office resources and supplies, and ensures that all operational aspects of the Oval Office run efficiently. The Director works closely with the Chief of Staff and other senior advisors to maintain seamless operations.'
+    },
+    {
+      id: 'whc',
+      title: 'White House Counsel',
+      name: 'pandaking314',
+      image: 'public/whc.png',
+      description: 'The White House Counsel serves as the chief legal advisor to the President and the White House staff, providing legal guidance on policy matters and ensuring compliance with legal requirements.',
+      expandedText: 'The White House Counsel reviews legislation, provides legal opinions on executive actions, advises on constitutional matters, and ensures that all White House activities comply with federal law. This role requires extensive legal expertise and the ability to navigate complex legal and constitutional issues.'
+    },
+    {
+      id: 'nsa',
+      title: 'National Security Advisor',
+      name: 'skuiiski',
+      image: 'public/nsa.png',
+      description: 'The National Security Advisor serves as the principal advisor to the President on matters of national security, foreign policy, and defense strategy.',
+      expandedText: 'The National Security Advisor coordinates with the Department of Defense, State Department, and intelligence agencies to provide comprehensive security briefings and policy recommendations. This role requires extensive knowledge of international relations, defense strategy, and the ability to synthesize complex information from multiple sources to provide clear guidance to the President.'
+    },
+    {
+      id: 'hsa',
+      title: 'Homeland Security Advisor',
+      name: '42510hunter',
+      image: 'public/hsa.png',
+      description: 'The Homeland Security Advisor provides strategic advice to the President on matters of homeland security, domestic threat assessment, and coordination of federal agencies responsible for protecting the nation.',
+      expandedText: 'This position works closely with the Department of Homeland Security, FBI, and other federal agencies to assess threats, coordinate responses, and develop comprehensive security strategies. The Homeland Security Advisor ensures effective communication and coordination between agencies to protect the nation from domestic threats.'
     }
   ]
 
@@ -202,10 +234,10 @@ function ContactPage() {
         <div className="contact-sections">
           <section className="press-section">
             <h2>Join Our Discord</h2>
-            <div className="info-card">
+              <div className="info-card">
               <h3>Kalinic Administration Discord Server</h3>
               <p>Join our official Discord server to stay connected with the administration and apply for positions.</p>
-              <div className="info-details">
+                <div className="info-details">
                 <p><strong>To apply for a position:</strong> Please create a ticket in the Discord server.</p>
                 <a 
                   href="https://discord.gg/VzThbnBjCD" 
@@ -216,7 +248,7 @@ function ContactPage() {
                   Join Discord Server →
                 </a>
               </div>
-            </div>
+                </div>
           </section>
 
           <section className="press-section">
@@ -225,6 +257,12 @@ function ContactPage() {
               <div className="vacancy-card">
                 <h3>Director of Legislative Affairs</h3>
                 <p><strong>Available Positions:</strong> x1</p>
+                <p>To apply, please create a ticket in the Discord server.</p>
+              </div>
+              <div className="vacancy-card">
+                <h3>White House Deputy Chief of Staff for Policy</h3>
+                <p><strong>Status:</strong> Vacant</p>
+                <p>Runs the WH Policy Office and advises on policy when needed.</p>
                 <p>To apply, please create a ticket in the Discord server.</p>
               </div>
             </div>
