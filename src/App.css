@@ -738,6 +738,134 @@
   margin-bottom: 10px;
 }
 
+/* Administration Page */
+.administration-sections {
+  display: grid;
+  gap: 40px;
+}
+
+.administration-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.administration-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.admin-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.admin-image-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #003366;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
+  background-color: #f5f5f5;
+}
+
+.admin-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #003366;
+  margin: 0 0 10px 0;
+  font-family: 'InstrumentSerif', Georgia, serif;
+}
+
+.admin-name {
+  font-size: 24px;
+  font-weight: normal;
+  color: #666;
+  margin: 0 0 20px 0;
+  font-family: 'InstrumentSerif', Georgia, serif;
+}
+
+.admin-description-container {
+  position: relative;
+  margin-top: 10px;
+}
+
+.admin-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin: 0;
+  position: relative;
+  transition: max-height 0.3s ease;
+}
+
+.admin-description:not(.expanded) {
+  max-height: 120px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.admin-expanded-text {
+  display: block;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.admin-fade-overlay {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.admin-description-container.expanded .admin-fade-overlay {
+  opacity: 0;
+}
+
+.admin-read-more {
+  margin-top: 15px;
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.admin-read-more:hover {
+  background-color: #004080;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .change,
