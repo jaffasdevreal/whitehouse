@@ -1,165 +1,171 @@
-import { useState } from 'react'
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
 
-function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
+function Header() {
   return (
-    <div className="app">
-      <header className="header">
-        <div className="header-container">
-          <div className="logo-section">
-            <img src="/seal.svg" alt="Seal of the President" className="seal" />
-            <div className="logo-text">
-              <h1>THE WHITE HOUSE</h1>
-              <p>1600 Pennsylvania Avenue NW</p>
-            </div>
-          </div>
-          <nav className={`nav ${menuOpen ? 'nav-open' : ''}`}>
-            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <ul className="nav-list">
-              <li><a href="#briefing-room">Briefing Room</a></li>
-              <li><a href="#administration">Administration</a></li>
-              <li><a href="#priorities">Priorities</a></li>
-              <li><a href="#get-involved">Get Involved</a></li>
-            </ul>
-          </nav>
+    <header className="header">
+      <div className="top-bar">
+        <div className="logo-center">
+          <span className="star">★ ★ ★</span>
+          <img src="public/US-WhiteHouse-Logo.png" alt="White House Seal" className="white-house-seal" />
+          <span className="star">★ ★ ★</span>
         </div>
-      </header>
-
-      <main>
-        <section className="hero">
-          <div className="hero-content">
-            <h2>Welcome to the White House</h2>
-            <p className="hero-subtitle">The official website of the President of the United States</p>
-            <div className="hero-actions">
-              <a href="#briefing-room" className="btn btn-primary">Briefing Room</a>
-              <a href="#administration" className="btn btn-secondary">Administration</a>
-            </div>
-          </div>
-        </section>
-
-        <section id="briefing-room" className="section briefing-room">
-          <div className="container">
-            <h2>Briefing Room</h2>
-            <div className="news-grid">
-              <article className="news-card featured">
-                <div className="news-image">
-                  <div className="placeholder-image"></div>
-                </div>
-                <div className="news-content">
-                  <span className="news-date">Today</span>
-                  <h3>President's Latest Statement</h3>
-                  <p>Read the latest statement from the President on current events and administration priorities.</p>
-                  <a href="#" className="read-more">Read More →</a>
-                </div>
-              </article>
-              <article className="news-card">
-                <div className="news-content">
-                  <span className="news-date">Yesterday</span>
-                  <h3>White House Announces New Initiative</h3>
-                  <p>The Administration announces a new initiative aimed at strengthening the economy.</p>
-                  <a href="#" className="read-more">Read More →</a>
-                </div>
-              </article>
-              <article className="news-card">
-                <div className="news-content">
-                  <span className="news-date">2 days ago</span>
-                  <h3>Press Briefing Highlights</h3>
-                  <p>Key highlights from the latest White House press briefing with updates on policy matters.</p>
-                  <a href="#" className="read-more">Read More →</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="priorities" className="section priorities">
-          <div className="container">
-            <h2>Administration Priorities</h2>
-            <div className="priorities-grid">
-              <div className="priority-card">
-                <div className="priority-icon">🏛️</div>
-                <h3>Economy</h3>
-                <p>Building a stronger, more resilient economy that works for all Americans.</p>
-              </div>
-              <div className="priority-card">
-                <div className="priority-icon">🌍</div>
-                <h3>Climate</h3>
-                <p>Leading the world in addressing climate change and creating clean energy jobs.</p>
-              </div>
-              <div className="priority-card">
-                <div className="priority-icon">🏥</div>
-                <h3>Health Care</h3>
-                <p>Expanding access to affordable, quality health care for every American.</p>
-              </div>
-              <div className="priority-card">
-                <div className="priority-icon">🎓</div>
-                <h3>Education</h3>
-                <p>Investing in education to ensure every child has access to quality learning opportunities.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="get-involved" className="section get-involved">
-          <div className="container">
-            <h2>Get Involved</h2>
-            <div className="involvement-grid">
-              <div className="involvement-card">
-                <h3>Contact Us</h3>
-                <p>Send a message to the White House</p>
-                <a href="#" className="btn btn-outline">Send a Message</a>
-              </div>
-              <div className="involvement-card">
-                <h3>Sign Up for Updates</h3>
-                <p>Receive updates from the White House</p>
-                <a href="#" className="btn btn-outline">Subscribe</a>
-              </div>
-              <div className="involvement-card">
-                <h3>Visit the White House</h3>
-                <p>Learn about public tours and visits</p>
-                <a href="#" className="btn btn-outline">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer className="footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-section">
-              <h4>White House</h4>
-              <p>1600 Pennsylvania Avenue NW<br/>Washington, DC 20500</p>
-            </div>
-            <div className="footer-section">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#briefing-room">Briefing Room</a></li>
-                <li><a href="#administration">Administration</a></li>
-                <li><a href="#priorities">Priorities</a></li>
-              </ul>
-            </div>
-            <div className="footer-section">
-              <h4>Connect</h4>
-              <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Accessibility</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>&copy; 2024 The White House. All rights reserved.</p>
+        <div className="white-house-text-center">
+          <div className="flag-icon">🇺🇸</div>
+          <div className="text-content">
+            <h2>THE WHITE HOUSE</h2>
+            <p>PRESIDENT NIKOLA KALINIC</p>
           </div>
         </div>
-      </footer>
+      </div>
+      <Nav />
+    </header>
+  )
+}
+
+function Nav() {
+  return (
+    <nav className="nav-bar">
+      <NavLink to="/" className="nav-link">HOME</NavLink>
+      <NavLink to="/agenda" className="nav-link">the AGENDA</NavLink>
+      <NavLink to="/press" className="nav-link">PRESS</NavLink>
+      <NavLink to="/contact" className="nav-link">CONTACT us</NavLink>
+    </nav>
+  )
+}
+
+function HomePage() {
+  return (
+    <div className="hero-container">
+      <div className="hero-left">
+        <h1 className="hero-title">
+          <span className="change">CHANGE</span>
+          <span className="has-come">HAS COME</span>
+          <span className="to">to</span>
+          <span className="america">AMERICA</span>
+        </h1>
+        <p className="hero-subtitle">THE INAUGURATION of PRESIDENT NIKOLA KALINIC <br/> and VICE PRESIDENT CAESAHRIUS</p>
+      </div>
+      <div className="hero-right">
+        <div className="portraits-container">
+          <img src="public/vicepresident.png" alt="Vice President" className="vp-image" />
+          <img src="public/president.png" alt="President Nikola Kalinic" className="president-image" />
+        </div>
+      </div>
     </div>
+  )
+}
+
+function AgendaPage() {
+  return (
+    <div className="press-page">
+      <div className="container">
+        <h1 className="page-title">The Agenda</h1>
+        <div className="agenda-content">
+          <p>View the full agenda document:</p>
+          <a 
+            href="https://drive.google.com/file/d/1Ypuxu0gvPMhLdx7C21qhV7UD0Fr2m4_X/view" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="agenda-link"
+          >
+            Open Agenda PDF →
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function PressPage() {
+  return (
+    <div className="press-page">
+      <div className="container">
+        <h1 className="page-title">Press & Media</h1>
+        
+        <div className="press-sections">
+          <section className="press-section">
+            <h2>Next Press Conference</h2>
+            <div className="press-conference-info">
+              <div className="info-card">
+                <h3>Upcoming Conference</h3>
+                <p>The White House Press Office would like to inform members of the public of a press briefing occurring today or Tuesday, November 4 at 8:30 PM EST. This briefing will be open to members of the public and members of the media, access will be through the press gate at the White House starting promptly at 8:20 PM EST. Thank you. A announcement is attached below showing the time converted to your local time.</p>
+              </div>
+            </div>
+          </section>
+
+          <section className="press-section">
+            <h2>Seating Chart</h2>
+            <div className="seating-chart-container">
+              <img src="public/seatingchart.png" alt="Press Seating Chart" className="seating-chart" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function ContactPage() {
+  return (
+    <div className="press-page">
+      <div className="container">
+        <h1 className="page-title">Contact Us</h1>
+        
+        <div className="contact-sections">
+          <section className="press-section">
+            <h2>Join Our Discord</h2>
+            <div className="info-card">
+              <h3>Kalinic Administration Discord Server</h3>
+              <p>Join our official Discord server to stay connected with the administration and apply for positions.</p>
+              <div className="info-details">
+                <p><strong>To apply for a position:</strong> Please create a ticket in the Discord server.</p>
+                <a 
+                  href="https://discord.gg/VzThbnBjCD" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="discord-link"
+                >
+                  Join Discord Server →
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className="press-section">
+            <h2>Current Vacancies</h2>
+            <div className="vacancies-container">
+              <div className="vacancy-card">
+                <h3>Director of Legislative Affairs</h3>
+                <p><strong>Available Positions:</strong> x1</p>
+                <p>To apply, please create a ticket in the Discord server.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="app">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/agenda" element={<AgendaPage />} />
+            <Route path="/press" element={<PressPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <footer className="footer">
+          <p>&copy; 2024 The White House. All rights reserved.</p>
+        </footer>
+      </div>
+    </Router>
   )
 }
 
