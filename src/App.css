@@ -458,8 +458,8 @@
   object-fit: contain;
   position: absolute;
   z-index: 10;
-  top: -5%;
-  left: -70%;
+  top: 0%;
+  left: -43%;
   transform: translateX(-50%);
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
   pointer-events: none;
